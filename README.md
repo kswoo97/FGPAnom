@@ -27,10 +27,27 @@ obtaining_flow_surrogate.ipynb
 
 ## How to run FGP?
 
-One can reproduce the results by running the following code:
+### Running main.py
+
+One can reproduce the performance prediction results by running the following code:
 ```
-python3 main.py
+python3 main.py -dname nb101 -device cuda:0 -train_ratio 0.01 -proj_layer 2 -proj_dim1 128 -proj_dim2 64 -ssl_lr 0.001 -wdecay 1e-6 -lamda1 0.5 -lamda2 0.5 -enc gatedgcn
 ```
+
+### Hyperparameters
+
+Each argument corresponds to each hyperparameter, which is as follows:
+- ```-dname``` is a ```str``` that indicates the data name, which should be one of {```nb101, nb201, nb301```}.
+- ```-device``` is a ```str``` that indicates the data type that indicates GPU device number, such as ```cuda:0```.
+- ```train_ratio``` is a ```float``` that indicates the ratio of the training set to be used for model fine-tuning, which should be within $(0,1]$, such as ```0.01```.
+- ```proj_layer``` is a ```int``` that indicates the number of layers of the projection head, such as ```2```.
+- ```proj_dim1``` is a ```int``` that indicates the hidden dimension of the surrogate projection head, such as ```128```.
+- ```proj_dim2``` is a ```int``` that indicates the hidden dimension of the zero-cost proxy projection head, such as ```64```.
+- ```ssl_lr``` is a ```float``` that indicates the pre-training learning rate, such as ```1e-3```.
+- ```wdecay``` is a ```float``` that indicates the pre-training weight decay, such as ```1e-6```.
+- ```lamda1``` is a ```float``` that indicates the loss coefficient of the surrogate reconstruction loss, such as ```0.5```.
+- ```lamda2``` is a ```float``` that indicates the loss coefficient of the zero-cost proxy prediction loss, such as ```0.5```.
+- ```enc``` is a ```str``` that indicates the neural architecture encoder type, which should be one of {```gatedgcn, gin, flowerformer```}.
 
 ## References
 - Supervised training code is from (Hwang et al., FlowerFormer: Empowering Neural Architecture Encoding using a Flow-aware Graph Transformer, In CVPR 2024).
