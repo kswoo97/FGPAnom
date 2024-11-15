@@ -10,8 +10,13 @@ This repository provides a source code of our proposed pre-training method ***FG
 
 We use three datasets: NAS-Bench-101 [1], NAS-Bench-201 [2], and NAS-Bench-301 [3].
 
+### Link
 In the following link, we provide our pre-processed version of these datasets.
 https://drive.google.com/drive/folders/163H_FbKeeng0rWVtKHiYiEY05qdK6GQX?usp=sharing
+
+### Usage
+1. Please make the folder named ```./dataset``` in the same hierarchy with ```main.py```
+2. Then, please put the datasets in ```./dataset``` folder.
 
 ## How to obtain the flow surrogate, which is our pre-training objective?
 
