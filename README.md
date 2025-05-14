@@ -2,7 +2,7 @@
 
 This repository is an official code implementation of the paper entitled ***Learning to Flow from Generative Pretext Tasks for Neural Architecture Encoding***.
 
-The paper has been submitted to ICML 2025.
+The paper has been submitted to NeurIPS 2025.
 
 This repository provides a source code of our proposed pre-training method ***FGP***, and used datasets.
 
