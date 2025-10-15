@@ -1,4 +1,4 @@
-# FGPAnom
+# Flow-based Generative Pre-Training
 
 This repository is an official code implementation of the paper entitled ***Learning to Flow from Generative Pretext Tasks for Neural Architecture Encoding***.
 
