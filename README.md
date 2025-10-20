@@ -4,9 +4,9 @@ This repository is an official code implementation of FGP, a flow-based generati
 
 ## Paper information
 
-- Title: Learning to Flow from Generative Pretext Tasks for Neural Architecture Encoding.
-- Authors: Sunwoo Kim, Hyunjin Hwang, Kijung Shin
-- Venue: NeurIPS 2025
+- **Title**: Learning to Flow from Generative Pretext Tasks for Neural Architecture Encoding.
+- **Authors**: Sunwoo Kim, Hyunjin Hwang, Kijung Shin
+- **Venue**: NeurIPS 2025
 
 ## Datasets
 
