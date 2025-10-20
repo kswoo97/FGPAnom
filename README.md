@@ -1,10 +1,12 @@
 # Flow-based Generative Pre-Training
 
-This repository is an official code implementation of the paper entitled ***Learning to Flow from Generative Pretext Tasks for Neural Architecture Encoding***.
+This repository is an official code implementation of FGP, a flow-based generative pre-training method for neural architecture encoding.
 
-The paper has been submitted to NeurIPS 2025.
+## Paper information
 
-This repository provides a source code of our proposed pre-training method ***FGP***, and used datasets.
+- Title: Learning to Flow from Generative Pretext Tasks for Neural Architecture Encoding.
+- Authors: Sunwoo Kim, Hyunjin Hwang, Kijung Shin
+- Venue: NeurIPS 2025
 
 ## Datasets
 
