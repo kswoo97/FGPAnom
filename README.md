@@ -36,6 +36,11 @@ One can reproduce the performance prediction results by running the following co
 python3 main.py -dname nb101 -device cuda:0 -train_ratio 0.01 -proj_layer 2 -proj_dim1 128 -proj_dim2 64 -ssl_lr 0.001 -wdecay 1e-6 -lamda1 0.5 -lamda2 0.5 -enc gatedgcn
 ```
 
+### Best hyperparameter configurations
+
+Best hyperparameter configurations are in ```fgp_hyperparameters.pickle```.
+
+
 ### Hyperparameters
 
 Each argument corresponds to each hyperparameter, which is as follows:
